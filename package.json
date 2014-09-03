@@ -1,0 +1,29 @@
+{
+  "name": "utilikit",
+  "version": "0.0.1",
+  "author": {
+    "name": "Chris Webb",
+    "email": "chris@christopherwdesign.com",
+    "url": "http://blog.mediumequalsmessage.com"
+  },
+  "description": "A kit of varying utilities which can be loaded individually",
+  "keywords": [
+    "utilities"
+  ],
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp-esformatter": "^1.0.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-jsvalidate": "^1.0.0",
+    "gulp-mocha": "^1.0.0",
+    "jshint-stylish": "^0.4.0",
+    "mocha-unfunk-reporter": "^0.4.0",
+    "run-sequence": "^0.3.6"
+  },
+  "repository": {
+    "url": "git@github.com:cwebbdesign/utilikit.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
