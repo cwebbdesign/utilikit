@@ -4,5 +4,6 @@ module.exports = {
   //'date' : require('./lib/date'),
   //'function' : require('./lib/function'),
   // 'touch' : require('./lib/touch')
-  'object': require('./lib/object')
+  'object': require('./lib/object'),
+  'utilities': require('./lib/utilities')
 };

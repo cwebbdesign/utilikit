@@ -17,6 +17,7 @@
     "gulp-jsvalidate": "^1.0.0",
     "gulp-mocha": "^1.0.0",
     "jshint-stylish": "^0.4.0",
+    "lodash-node": "^2.4.1",
     "mocha-unfunk-reporter": "^0.4.0",
     "run-sequence": "^0.3.6"
   },
