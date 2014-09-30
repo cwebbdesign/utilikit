@@ -16,7 +16,7 @@ var mocha = require('gulp-mocha');
 var config = {
   paths: {
     assets: {
-      js: ['*.js', './lib/**/*.js']
+      js: ['./**/*.js', '!./node_modules/**/*.js']
     },
     dist: {},
     test: {
@@ -31,20 +31,20 @@ var config = {
 
 // JS Hint
 gulp.task('lint', function() {
-  return gulp.src(config.paths.assets.js)
+  return gulp.src(config.paths.assets.js.concat('!' + config.paths.test.js))
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
 });
 
 // JS Validate
 gulp.task('validate', function() {
-  return gulp.src(config.paths.assets.js, config.paths.test.js)
+  return gulp.src(config.paths.assets.js)
     .pipe(jsValidate());
 });
 
 // JS Formatting
 gulp.task('format', function() {
-  return gulp.src(config.paths.assets.js, config.paths.test.js)
+  return gulp.src(config.paths.assets.js)
     .pipe(esformatter()) // use .esformatter
     .pipe(gulp.dest('')); // replace the existing file
 });
